@@ -1,0 +1,117 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+header {font-family: FiraSans;
+letter-spacing: 5px;
+}
+
+h1 {font-size: 40px;
+    text-align: center;   
+}
+
+body {font-family: OpenSans;
+    font-size: 10px;
+    line-height: 125%;
+    letter-spacing: normal;
+    word-spacing: .5px;
+}
+
+section p:first-of-type {
+    text-indent: 20px;
+}
+
+a:link {
+    color: #1494e9; 
+    text-decoration: underline;
+    outline: none;
+}
+
+
+a:hover, a:focus {
+    color: #e74c3c; /* Red color for hovered links */
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    color: #9b59b6; 
+    outline: none;
+}
+
+  @font-face {
+    font-family: 'FiraSans';
+    src: url('FiraSans-bold.otf') format('opentype');
+    font-weight: bold;}
+
+  @font-face {
+    font-family: 'OpenSans';
+    src: url('/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    }
+ 
+ nav ul li {
+  list-style-type: none;
+ }
+ 
+ a[href*="http"] {
+  background-image: url("/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/external-link-52.png");
+  background-position: right;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+}
+ 
+ nav ul li a{
+     display: inline-block;
+     font-family: 'firaSans', 'opensans';
+     list-style-type: none;
+     line-height: 50px;
+     width:100%;
+     border: 1.2px solid #d2112e;
+     border-radius: 5px;
+     text-align: center;           
+     margin-top: 5px;
+ }
