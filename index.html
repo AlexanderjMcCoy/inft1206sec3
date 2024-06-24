@@ -1,82 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../Index.css" rel="stylesheet" type="text/css">
+    <title>inft1206</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction:column;
+            min-height: 100vh;
+        }
 
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <link href="../Index.css" rel="stylesheet" type="text/css">
-                <title>inft1206</title>
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        margin: 0;
-                        padding: 0;
-                    }
+        nav {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 0; 
+            float: 1;
+        }
+        
+        nav img {
+            max-height: 100px;
+        }
 
-                    nav {
-                        display: flex;
-                        background-color: #f0f0f0;
-                        padding: 0; 
-                    }
-                    
-                    nav img {
-                        max-height: 100px; 
-                    }
+        h3 {
+            text-align: center;
+            border-bottom: 3px solid rgb(0, 0, 0);
+        }
 
-                    h3 {text-align: center;
-                        border-bottom: 3px solid rgb(0, 0, 0);
-                    }
+        h2 {
+            text-align: center;
+        }
 
-                    h1, h3, h4, p {
-                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        margin-left: 10px;
-                    }
-                    
-                    ul {
-                        text-align: center;
-                        padding-left: 70px;
-                    }
-                    
-                    li {
-                        margin-bottom: 10px;
-                        list-style: none;
-                    }
-                    p {border-bottom: 10px solid rgb(0, 0, 0);
-                    padding: 10px;}
-                </style>
-            </head>
-            <body>
-                <nav>
-                    <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/assets/intense coding.jpeg" alt="Intense coding">
-                    <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/images/monkey working at computer.jpg" alt="Me working at PC">
-                    <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/assets/cat working.webp" alt="Busy Cat">
-                    <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/images/BFV wallpaper1.png" alt="">
-                    <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/images/me and ela by mom.jpg" alt="">
-                    <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/assets/cat-study.jpg" alt="Cat Studying">
-                </nav>
-                <h1>Welcome to Alexander McCoy's Web Development Assignments </h1>
-                This is the main page for assignments by Alex </h1>
-                <h4><strong>INFT1206</strong> Section 3. Student number: <strong>100954554</strong> </h4>
-                <h3>Assignment 1: HTML Overview</h3>
-                <ul>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/A1P1.html">Assignment 1: Part 1</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/A1P2.html">Assignment 1: Part 2</a></li>
-                </ul>
-                <h3>Assignment 2: HTML Multimedia and Tables</h3>
-                <ul>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment2amccoy100954554/A2P1.html">Assignment 2: Part 1</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment2amccoy100954554/A2P2.html">Assignment 2: Part 2</a></li>
-                </ul>
-                <h3>Assignment 3: CSS</h3>
-                <ul>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P1.html">Assignment 3: Part 1</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P2.html">Assignment 3: Part 2</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P3.html">Assignment 3: Part 3</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P3.css">Assignment 3: Part 3: CSS</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P4.html">Assignment 3: Part 4</a></li>
-                    <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P4.css">Assignment 3: Part 4: CSS</a></li>
-                </ul>
-                <h4>Alexander McCoy, Student number: <strong>100954554</strong></h4>
-                <p>Copyright: 2042, McCoy</p>
-            </body>
-            </html>
-            
+        h1, h3, h4, h5, p {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        
+        ul {
+            text-align: center;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding: 0px;
+            list-style: none;
+            text-align: center;
+        }
+
+        p {
+            border-bottom: 10px solid rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        ::content {
+            float: 1;
+        }
+
+        footer {
+            position: sticky;
+            bottom: 0;
+            background-color:#f0f0f0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/assets/intense coding.jpeg" alt="Intense coding">
+        <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/images/monkey working at computer.jpg" alt="Me working at PC">
+        <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/assets/cat working.webp" alt="Busy Cat">
+        <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/images/BFV wallpaper1.png" alt="">
+        <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/images/me and ela by mom.jpg" alt="">
+        <img src="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/assets/cat-study.jpg" alt="Cat Studying">
+    </nav>
+    <div class="content">
+        <h2>Welcome to Alexander McCoy's Web Development Assignments</h2>
+        <h3>This is the main page for assignments by Alex</h3>
+        <h4><strong>INFT1206</strong> Section 3. Student number: <strong>100954554</strong></h4>
+        <h3>Assignment 1: HTML Overview</h3>
+        <ul>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/A1P1.html">Assignment 1: Part 1</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment1 a,mccoy/A1P2.html">Assignment 1: Part 2</a></li>
+        </ul>
+        <h3>Assignment 2: HTML Multimedia and Tables</h3>
+        <ul>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment2amccoy100954554/A2P1.html">Assignment 2: Part 1</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment2amccoy100954554/A2P2.html">Assignment 2: Part 2</a></li>
+        </ul>
+        <h3>Assignment 3: CSS</h3>
+        <ul>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P1.html">Assignment 3: Part 1</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P2.html">Assignment 3: Part 2</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P3.html">Assignment 3: Part 3</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P3.css">Assignment 3: Part 3: CSS</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P4.html">Assignment 3: Part 4</a></li>
+            <li><a href="/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/A3P4.css">Assignment 3: Part 4: CSS</a></li>
+        </ul>
+    </div>
+    <footer>
+        <h5>Alexander McCoy, Student number: <strong>100954554</strong></h5>
+        <p>Copyright: 2042, McCoy</p>
+    </footer>
+</body>
+</html>
