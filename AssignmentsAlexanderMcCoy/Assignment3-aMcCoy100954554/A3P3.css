@@ -35,8 +35,6 @@ header, section, aside, nav, footer {
   padding: 20px;
 }
 
-/* header and footer */
-
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
@@ -53,9 +51,9 @@ h1 {font-size: 40px;
 }
 
 body {font-family: OpenSans;
-    font-size: 10px;
-    line-height: 125%;
-    letter-spacing: normal;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: 110;
     word-spacing: .5px;
 }
 
@@ -71,7 +69,7 @@ a:link {
 
 
 a:hover, a:focus {
-    color: #e74c3c; /* Red color for hovered links */
+    color: #e74c3c; 
     text-decoration: none;
     outline: none;
 }
@@ -95,11 +93,11 @@ a:visited {
  nav ul li {
   list-style-type: none;
  }
- 
+
  a[href*="http"] {
   background-image: url("/inft1206sec3/AssignmentsAlexanderMcCoy/Assignment3-aMcCoy100954554/external-link-52.png");
   background-position: right;
-  background-size: 15px;
+  background-size: 16px;
   background-repeat: no-repeat;
   padding-right: 20px;
 }
@@ -108,10 +106,10 @@ a:visited {
      display: inline-block;
      font-family: 'firaSans', 'opensans';
      list-style-type: none;
-     line-height: 50px;
+     line-height: 55px;
      width:100%;
      border: 1.2px solid #d2112e;
-     border-radius: 5px;
+     border-radius: 15px;
      text-align: center;           
      margin-top: 5px;
  }

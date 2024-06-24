@@ -10,18 +10,14 @@ div {
   margin: 0 auto; 
   text-align: center;
   justify-content: center; 
-  background: linear-gradient(
-      to bottom right, 
-      rgba(0, 0, 0, 0) 0%, 
-      rgba(0, 0, 0, 0.2) 30%, 
-      rgba(0, 0, 0, 0.2) 100%), #ff0000;
-  font-size: 1.0625rem; /* NOTE FOR GETTING THIS: rem = font size px (17 original) / root (always16) */
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%), #ff0000;
+  font-size: 1.1rem; /* NOTE FOR GETTING THIS ASKED IN NOTES FOR: rem = font size px (17 original) / root (always16) */
   color: #fff; 
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 1); 
   border-radius: 15px; 
   border: 1px solid #660606; 
   box-shadow: 
-      0 4px 20px rgba(0, 0, 0, 1), 
-      -20px -20px 50px rgba(255, 255, 255, 0.7), 
-      20px 20px 50px rgba(0, 0, 0, 0.7); 
+    0 4px 20px rgba(0, 0, 0, 1), 
+    -20px -20px 50px rgba(255, 255, 255, 0.7), 
+    20px 20px 50px rgba(0, 0, 0, 0.7); 
 }
