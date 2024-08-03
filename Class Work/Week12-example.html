@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12: Introduction to Forms</title>
+    <script>
+        function validate () {
+            let fname = document.querySelector('#fname').value.trim();
+            let fnameError = document.querySelector('#fname-error');
+            fnameError.textContent = '';
+
+            if (fname.length == 0){
+                fnameError.textContent = "You must enter first name";
+                return false;
+            }
+            else if (fname.length < 5){            
+                fnameError.textContent = "Too short";
+                return false;
+            } else {
+                fname = fname.toLowerCase();
+                for (let i = 0; i < fname.length; i++) {
+                    if (fname[i] < 'a' || fname[i] > 'z') {
+                        fnameError.textContent = "Invalid characters in name";
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Week 12: Introduction to Forms</h1>
+    <form action="https://httpbin.org/get" method="get" onsubmit="return validate()">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" size="15" required>
+                <span id="fname-error" style="color: red;"></span>
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" title="Enter your Last Name" size="15" placeholder="Last Name">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="Assignment">Upload Assignment</label>
+                <input type="file" id="Assignment" name="Assignment">
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <p>What are your hobbies?</p>
+            <input type="checkbox" name="interest" id="interest1" value="Sport">
+            <label for="interest1">Sport</label>
+            <input type="checkbox" name="interest" id="interest2" value="Anime" checked>
+            <label for="interest2">Anime</label>
+        </div>
+        <br>
+        <div>
+            <p>What OS do you use?</p>
+            <input type="radio" name="os" id="os1" value="Windows">
+            <label for="os1">Windows</label>
+            <input type="radio" name="os" id="os2" value="Mac">
+            <label for="os2">Mac</label>
+        </div>
+        <br>
+        <div>
+            <label for="course">What is your course?</label>
+            <input type="text" name="course" id="course" list="list1">
+            <datalist id="list1">
+                <option value="INFT1206">INFT1206</option>
+                <option value="INFT20100">INFT20100</option>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="weekend">What to do this weekend?</label>
+            <select name="weekend" id="weekend">
+                <option value="Coffee">Drink Coffee</option>
+                <option value="Movies">Movies</option>
+                <option value="Walk">Walk</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Web">How is Development:</label>
+            <br>
+            <textarea name="Web" id="Web" rows="10"></textarea>
+            <button type="button">Submit</button>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100">
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+        <input type="week" name="week" id="week">
+    </form>
+</body>
+</html>
