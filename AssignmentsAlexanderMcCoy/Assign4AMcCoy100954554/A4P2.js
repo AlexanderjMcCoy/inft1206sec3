@@ -9,14 +9,16 @@ altText = {'pic1.jpg': 'Eye', 'pic2.jpg': 'Rocks or something', 'pic3.jpg': 'Flo
 for (const filename of imageFilenames) {
   newImage = document.createElement('img');
   newImage.setAttribute('src', 'images/' + filename);
-  newImage.setAttribute('alt', altText[filename]); thumbBar.appendChild(newImage);
+  newImage.alt = altText[filename];
+  thumbBar.appendChild(newImage);
+  
 
   newImage.addEventListener('click', function() {
   displayedImage.setAttribute('src', 'images/' + filename);});
-  displayedImage.setAttribute('alt', altText[filename]);};
+  displayedImage.alt = altText[filename];
 
 btn.addEventListener('click', () => {
 if (btn.classList.contains('dark')) {btn.classList.remove('dark'); btn.classList.add('light'); btn.textContent = 'Lighten';
     overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';} 
 else {btn.classList.remove('light'); btn.classList.add('dark'); btn.textContent = 'Darken';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';}});
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';}});}
