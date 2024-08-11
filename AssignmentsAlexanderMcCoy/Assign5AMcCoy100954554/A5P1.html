@@ -37,8 +37,8 @@ Description: Assignment #5 Part 1 for Web development fundamentals
 
       <form class="search" aria-label="Search the Website">
         <label for="search-query">Search Our Website</label>
-        <input type="search" name="q" placeholder="Search Here">
-        <input type="submit" value="Go!">
+        <input type="search" name="q" id="search-query" placeholder="Search Here" aria-label="Search query">
+        <input type="submit" value="Go!" aria-label="Submit search">
       </form>
     </nav>
 
@@ -121,6 +121,7 @@ Description: Assignment #5 Part 1 for Web development fundamentals
           <source src="media/bear.ogg" type="audio/ogg">
           <p id="audio=description">Audio clip discussing bear mating rituals. For a full transcript, please see below. If your browser does not support audio playback, visit the <a href="www.wildlife.com/media/bear.mp3">link to the audio file</a>.</p>
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
+          
         </audio>    
 
         <aside>
@@ -142,7 +143,7 @@ Description: Assignment #5 Part 1 for Web development fundamentals
 
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
+                <label for="name">Your name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
